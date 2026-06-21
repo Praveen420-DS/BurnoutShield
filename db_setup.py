@@ -135,7 +135,7 @@ def main():
         })
 
     # One HR admin account
-    hr_password = generate_password()
+    hr_password = "Admin@123"
     salt, pwd_hash = hash_password(hr_password)
     cur.execute("""
         INSERT OR REPLACE INTO users
